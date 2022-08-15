@@ -85,6 +85,4 @@ soup = BeautifulSoup(response.content, "html.parser")
 
 member_count = soup.select("#CONT > div.return_Boxcont > table > tr:nth-child(2) > td.search_right_top")
 
-print(member_count)
-
 print("正社員: "+member_count[0].text)
